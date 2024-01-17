@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* A PARTIR DAQUI: */
+
+html {
+    width: 100svw;
+    height: 100svh;
+
+    text-align: center;
+
+    font-family: "Sono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MONO" 1;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    min-height:100vh;
+}
+
+/* H E A D E R */
+
+@media (max-width:801px) {
+    .imagem_mobile {
+        display: auto;
+    }
+    
+    .imagem_desk {
+        display: none;
+    }
+}
+
+@media (min-width:801px) {
+    .imagem_mobile {
+        display: none;
+    }
+    
+    .imagem_desk {
+        display: auto;
+
+        width: 70svw;
+    }
+
+    header {
+        width: 70svw;
+    }
+}
+
+header img {
+    width: 100svw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 1rem 0;
+
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Q U E M  S O M O S */
+
+@media (max-width:801px) {
+    .capivara {
+        display: none;
+    }
+
+    .quem_somos {
+        padding: 1rem 3rem 2rem 3rem;
+    }
+}
+
+@media (min-width:801px) {
+    .quem_somos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        align-items: center;
+        justify-items: center;
+
+        padding: 3rem 1rem;
+    }
+
+    .capivara {
+        width: 30vw;
+    }
+
+    .texto_quemsomos {
+        padding: 0 1rem;
+    }
+
+    main {
+        width: 70svw;
+    }
+}
+
+.quem_somos h2 {
+    padding: 1rem 0;
+
+    text-decoration: underline;
+}
+
+.quem_somos p {
+    line-height: 1.2rem;
+
+    text-align: justify;
+}
+
+/* M E M B R O S */
+
+@media (max-width:801px) {
+    .mini_membros {
+        padding: 1rem 0 0 0;
+    }
+
+    .mini_membros img {
+        width: 100svw;
+    
+        margin-top: .7rem;
+    }
+}
+
+@media (min-width:801px) {
+    .mini_membros {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 5rem 0;
+    }
+
+    .mini_membros img {
+        width: 30svw;
+    
+        margin-top: .7rem;
+    }
+}
+
+.mini_membros {
+    color: white;
+    background-color: #ec2124;
+}
+
+.mini_membros h2 {
+    padding: 1rem 0;
+
+    text-decoration: underline;
+}
+
+.mini_membros p {
+    line-height: 2rem;
+}
+
+.mini_membros button {
+    padding: .5rem;
+    margin: 1rem;
+
+    background-color: white;
+    border: 1px solid white;
+}
+
+.mini_membros button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid yellowgreen;
+
+    cursor: pointer;
+}
